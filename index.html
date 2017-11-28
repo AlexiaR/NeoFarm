@@ -1,13 +1,185 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Titre</title>
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Neofarm">
+    <title>NeoFarm - L'agriculture du futur</title>
 
-    <body>
+    <link href="style.css" rel="stylesheet" type="text/css">
 
-    </body>
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="jquery-3.2.1.min.js"></script>
+
+  </head>
+
+  <script src="https://use.fontawesome.com/b1ed051961.js"></script>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><a href="index.html"><span class="highlight">Neo</span><span class="color">.</span>Farm</h1></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="#about">À PROPOS</a></li>
+            <li><a href="#team-members">L'ÉQUIPE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-content">
+    <section id="showcase">
+      <div class="container">
+        <h1>Robotique et agriculture
+          <br>conçues ensemble</h1>
+        <hr>
+        <p>Des fermes robotisées respectueuses de la planète<br>pour nourir l'humanité</p>
+        <a class="btn btn-primary btn-xl" href="">EN SAVOIR PLUS</a>
+      </div>
+    </section>
+    </main>
+
+    <section id="about" class="blanc">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">À propos de Neo.Farm</h2>
+          <hr class="blanc">
+          <p class="blanc">Utilisation massive d’intrants chimiques, dépendance à l’énergie pétrolière, monoculture, mécanisation intensive… Le modèle dominant d’agriculture maraîchère n’est plus soutenable, pour l’homme comme pour la planète.
+          NeoFarm met la robotique au service d’une agriculture respectueuse de l’environnement.
+          <br>
+          <br>
+          L’ambition de notre équipe est de concevoir des fermes pensées dès l’origine pour être robotisées, à travers une solution technique complète (logiciel et robot maraîcher). Actuellement en phase de R&D, NeoFarm installera son premier prototype de ferme du futur au premier semestre 2018.</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="team-members">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Notre équipe</h2>
+          <hr>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="box">
+          <img src="../img/Alexia.jpeg" alt="Alexia Rey">
+          <h3>Alexia Rey</h3>
+          <p>Opérations</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/alexiarey/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <img src="../img/Olivier.jpeg" alt="Olivier Le Blainvaux">
+          <div>
+          <h3>Olivier Le Blainvaux</h3>
+          <p>Technique</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/olivier-le-blainvaux-97885020/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../img/Technofounders.jpeg" alt="TechnoFounders">
+          <h3>TechnoFounders</h3>
+          <p>Le Startup Studio</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/TechnoFounders">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://www.technofounders.com/">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/9253707/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <section id="contact" class="autre">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Contactez-nous</h2>
+          <hr>
+          <p>Prêt ou prête à vous lancer dans votre prochaine aventure avec nous ? Excité(e) à l'idée de changer le paradigme agricole actuel ? Envoie-nous un mail et nous te répondrons au plus vite !</p>
+          <br>
+          <a href="mailto:contact@neo.farm">
+          <i class="fa fa-envelope-o big" aria-hidden="true"></i></a>
+          <br>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Neo.Farm Copyright &copy; 2017</p>
+    </footer>
+
+  </body>
+
+  <script>
+    $(function() {
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 200) {
+                $("header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $("header").removeClass("active");
+            }
+        });
+    });
+  </script>
+
 </html>
 
+  <!--
+    <header>
+      <div class="row">
+        <p class="logo">NeoFarm</p>
+      <ul class="main-nav">
+        <li><a href="">ACCUEIL</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">TEAM</a></li>
+        <li><a href="">JOIN US</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+      </div>
 
+      <div class="title">
+        <h1>L'avenir de l'agriculture</h1>
+        <div class="button">
+          <a href="" class="btn">En savoir plus</a>
+          <a href="" class="btn">Rejoins l'équipe</a>
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+
+  </body>
+</html>
