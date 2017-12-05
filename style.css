@@ -2,12 +2,13 @@ body {
   font-family: "Aileron", Geneva, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-color: #f8f9fa;
   color: #212529;
   width: 100%;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -20,23 +21,23 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 section.blanc {
-  background-color: #f05f40;
+  background-color: #ed7d31;
   padding-left: 200px;
   padding-right: 200px;
 }
 
 section.autre {
   background-color: #fff;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   padding-left: 200px;
   padding-right: 200px;
 }
@@ -52,18 +53,18 @@ ul {
 
 a {
   text-decoration: none;
-  color: #F05F40;
+  color: #ed7d31;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:hover {
-    color: #f05f40; }
+    color: #ed7d31; }
 
 hr {
   border-top: 1px solid rgba(0,0,0,.1);
   max-width: 50px;
   border-width: 1px;
-  border-color: #f05f40;
+  border-color: #ed7d31;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -126,7 +127,7 @@ h3.section-subheading {
 }
 
 .fa:hover {
-  color: #F05F40;
+  color: #ed7d31;
 }
 
 .fa.big {
@@ -170,7 +171,7 @@ header.active h1 {
 }
 
 header.active a:hover {
-  color: #F05F40;
+  color: #ed7d31;
 }
 
 header a {
@@ -181,7 +182,7 @@ header a {
 }
 
 header a:hover {
-  border-bottom: 1.5px solid #F05F40;
+  border-bottom: 1.5px solid #ed7d31;
   text-decoration: none;
 }
 
@@ -205,12 +206,12 @@ header nav {
 }
 
 header .highlight, header .current a {
-  color: #7bdb45;
+  color: #92d050;
   font-weight: bold;
 }
 
 header .color {
-  color: #F05F40;
+  color: #ed7d31;
 }
 
 
@@ -271,7 +272,7 @@ header .color {
   opacity: 0.5;
   transform: translate(-1%, -1%);
   transition: .5s ease;
-  color: #F05F40;
+  color: #ed7d31;
 }
 
 .box p {
@@ -286,7 +287,7 @@ footer {
   clear: both;
   position: relative;
   height: 60px;
-  padding: 10px;
+  padding-top: 10px;
   background-color: #212529;
   text-align: center;
   color: white;
@@ -308,11 +309,13 @@ footer {
 
 .btn-primary {
   color: #fff;
-  background-color: #F05F40;
-  border-color: #F05F40; }
+  background-color: #ed7d31;
+  border-color: #ed7d31; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
-    background-color: #ee4b28 !important; }
+    background-color: #F96D00 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+
 
