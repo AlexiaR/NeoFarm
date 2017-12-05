@@ -1,0 +1,9 @@
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.team-members @media screen and (min-width: 600px) {
+  flex-wrap: wrap;
+}

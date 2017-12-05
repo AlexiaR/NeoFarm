@@ -31,15 +31,15 @@ section {
 
 section.blanc {
   background-color: #ed7d31;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 section.autre {
   background-color: #fff;
   padding-bottom: 60px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 section p.blanc {
@@ -139,6 +139,7 @@ h3.section-subheading {
 /* Header */
 
 header {
+  display: flex;
   background-color: transparent;
   color: #fff;
   padding-top: 10px;
@@ -205,6 +206,7 @@ header nav {
   margin-top: 10px;
 }
 
+
 header .highlight, header .current a {
   color: #92d050;
   font-weight: bold;
@@ -250,25 +252,39 @@ header .color {
 
 /* Boxes */
 
-#team-members {
+#team {
   background-color: #f8f9fa!important;
   text-align: center;
 }
 
-#team-members .box {
-  float: left;
-  text-align: center;
-  width: 30%;
-  padding: 10px;
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-#team-members img {
+@media (max-width: 700px) {
+  .box {
+    min-width: 33.33%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    min-width: 50%;
+    padding: 10px;
+  }
+}
+
+#team img {
   width: 180px;
   border: 7px solid #fff;
   border-radius: 50%!important;
 }
 
-#team-members img:hover {
+#team img:hover {
   opacity: 0.5;
   transform: translate(-1%, -1%);
   transition: .5s ease;
@@ -276,10 +292,9 @@ header .color {
 }
 
 .box p {
-  margin-top: -20px;
+  margin-top: -10px;
   color: #868e96!important;
 }
-
 
 /* footer */
 
